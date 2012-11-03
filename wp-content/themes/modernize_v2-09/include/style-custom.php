@@ -14,7 +14,7 @@
 		$return_data = array('success'=>'-1', 'alert'=>'Cannot write ' . $gdl_custom_stylesheet_name . ' file, you may try setting the style-custom.css file permission to 755 or 777 to solved this. ( If file does not exists, you have to create it yourself )');
 		
 		// initial the value of the style
-		$file_path = SERVER_PATH . "/" . $gdl_custom_stylesheet_name;
+		$file_path = SERVER_PATH . "/claymore/" . $gdl_custom_stylesheet_name;
 		$gdl_fh = @fopen($file_path, 'w');
 		
 		if( !$gdl_fh ){ die( json_encode($return_data) ); }
